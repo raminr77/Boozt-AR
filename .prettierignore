@@ -1,0 +1,9 @@
+/public/**/*
+
+# minify css
+*.min.css
+
+# Ignore artifacts:
+build
+coverage
+node_modules
