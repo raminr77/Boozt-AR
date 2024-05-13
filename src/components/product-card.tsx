@@ -11,7 +11,7 @@ export function ProductCard({ title, description }: Product) {
           ar-status='not-presenting'
           ar-modes='scene-viewer webxr quick-look'
           poster='https://modelviewer.dev/shared-assets/models/NeilArmstrong.webp'
-          ios-src='https://modelviewer.dev/shared-assets/models/glTF-Sample-Assets/Models/MaterialsVariantsShoe/glTF-Binary/MaterialsVariantsShoe.glb'
+          ios-src='/chair-model.usdz'
           src='https://modelviewer.dev/shared-assets/models/glTF-Sample-Assets/Models/MaterialsVariantsShoe/glTF-Binary/MaterialsVariantsShoe.glb'
           environment-image='https://modelviewer.dev/shared-assets/environments/moon_1k.hdr'
         >
