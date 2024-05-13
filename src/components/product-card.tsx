@@ -12,7 +12,9 @@ export function ProductCard({ title, description }: Product) {
           poster='https://modelviewer.dev/shared-assets/models/NeilArmstrong.webp'
           environment-image='https://modelviewer.dev/shared-assets/environments/moon_1k.hdr'
         >
-          <button slot='ar-button'>AR</button>
+          <button slot='ar-button' className='absolute z-10 top-4 left-4 bg-red-500'>
+            View in your space
+          </button>
         </model-viewer>
       </div>
 
