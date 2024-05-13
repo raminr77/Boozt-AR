@@ -3,11 +3,13 @@ export function ProductCard({ title, description }: Product) {
     <div className='bg-white flex flex-col shadow-lg rounded-md border border-solid border-slate-200 overflow-hidden'>
       <div className='w-full bg-slate-100 flex items-center justify-center h-96'>
         <model-viewer
+          ar
           alt=''
           shadow-intensity='1'
           touch-action='pan-y'
           camera-controls={true}
           ar-status='not-presenting'
+          ar-modes='scene-viewer webxr quick-look'
           src='https://modelviewer.dev/shared-assets/models/NeilArmstrong.glb'
           poster='https://modelviewer.dev/shared-assets/models/NeilArmstrong.webp'
           environment-image='https://modelviewer.dev/shared-assets/environments/moon_1k.hdr'
