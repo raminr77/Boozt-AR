@@ -13,7 +13,7 @@ export const PRODUCTS_DATA: Product[] = [
     title: 'Product Title',
     model_URL: '/3Ds/model-02.glb',
     IOS_Model_URL: '/3Ds/model-02.usdz',
-    image: '/images/02-product-image.jpeg',
+    image: '/images/02-product-image.webp',
     description:
       'In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is available.'
   },
@@ -22,7 +22,7 @@ export const PRODUCTS_DATA: Product[] = [
     title: 'Product Title',
     model_URL: '/3Ds/model-03.glb',
     IOS_Model_URL: '/3Ds/model-03.usdz',
-    image: '/images/03-product-image.jpeg',
+    image: '/images/03-product-image.webp',
     description:
       'In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is available.'
   },
@@ -31,7 +31,7 @@ export const PRODUCTS_DATA: Product[] = [
     title: 'Product Title',
     model_URL: '/3Ds/model-04.glb',
     IOS_Model_URL: '/3Ds/model-04.usdz',
-    image: '/images/04-product-image.jpeg',
+    image: '/images/04-product-image.webp',
     description:
       'In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is available.'
   },
@@ -40,7 +40,7 @@ export const PRODUCTS_DATA: Product[] = [
     title: 'Product Title',
     model_URL: '/3Ds/model-05.glb',
     IOS_Model_URL: '/3Ds/model-05.usdz',
-    image: '/images/05-product-image.jpeg',
+    image: '/images/05-product-image.webp',
     description:
       'In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is available.'
   },
@@ -49,7 +49,7 @@ export const PRODUCTS_DATA: Product[] = [
     title: 'Product Title',
     model_URL: '/3Ds/Boozt.glb',
     IOS_Model_URL: '/3Ds/Boozt.usdz',
-    image: '/images/Boozt.jpeg',
+    image: '/images/Boozt.webp',
     description:
       'In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is available.'
   }
