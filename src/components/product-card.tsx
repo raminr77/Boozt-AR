@@ -3,8 +3,8 @@ export function ProductCard({ title, description }: Product) {
     <div className='bg-white flex flex-col shadow-lg rounded-md border border-solid border-slate-200 overflow-hidden'>
       <div className='w-full bg-slate-100 flex items-center justify-center h-96'>
         <model-viewer
-          ar
           alt=''
+          ar={true}
           shadow-intensity='1'
           touch-action='pan-y'
           camera-controls={true}

@@ -8,7 +8,8 @@ export declare global {
         React.AllHTMLAttributes<
           Partial<globalThis.HTMLElementTagNameMap['model-viewer']>
         >,
-        Partial<globalThis.HTMLElementTagNameMap['model-viewer']>
+        Partial<globalThis.HTMLElementTagNameMap['model-viewer']>,
+        { ar: boolean }
       >;
     }
   }
