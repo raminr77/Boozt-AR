@@ -1,21 +1,35 @@
-import { ProductCard } from './components/product-card.tsx';
-import { PRODUCTS_DATA } from './data/products.ts';
+import { useState } from 'react';
+import { Home } from './components/home.tsx';
+import { Header } from './components/header.tsx';
+import { Footer } from './components/footer.tsx';
+import { Markers } from './components/markers.tsx';
+import { Products } from './components/products.tsx';
+import { PageLayout } from './components/page-layout.tsx';
+
+const MENU = {
+  HOME: 'Home',
+  MARKERS: 'Markers',
+  PRODUCTS: 'Products'
+};
 
 function App() {
+  const [activeTab, setActiveTab] = useState<string>(MENU.HOME);
+
   return (
-    <main className='h-full bg-slate-50 flex flex-col items-center justify-center gap-4 select-none py-5'>
-      <div className='flex flex-col gap-1 items-center justify-center my-5'>
-        <h3 className='font-bold text-3xl text-gray-900'>Boozt AR</h3>
-        <p className='text-gray-400'>Augmented Reality - Platform Conference 2024</p>
-      </div>
+    <main className='h-full min-h-screen bg-slate-50 flex flex-col items-center justify-center gap-4 select-none py-5'>
+      <Header
+        activeTab={activeTab}
+        onTabChange={setActiveTab}
+        items={Object.values(MENU)}
+      />
 
-      <section className='flex flex-wrap gap-6 w-11/12 max-w-screen-md'>
-        {PRODUCTS_DATA.map(({ id, ...productItem }) => (
-          <ProductCard key={id} {...productItem} />
-        ))}
-      </section>
+      <PageLayout>
+        {activeTab === MENU.HOME && <Home />}
+        {activeTab === MENU.MARKERS && <Markers />}
+        {activeTab === MENU.PRODUCTS && <Products />}
+      </PageLayout>
 
-      <p className='mt-8 mb-3 text-gray-300'>Created By Ramin</p>
+      <Footer />
     </main>
   );
 }
