@@ -1,16 +1,29 @@
+/*
 /// <reference types="@google/model-viewer" />
-import React from 'react';
+*/
 
-export declare global {
+// import React from 'react';
+
+// export declare global {
+//   namespace JSX {
+//     interface IntrinsicElements {
+//       'model-viewer': React.DetailedHTMLProps<
+//         React.AllHTMLAttributes<
+//           Partial<globalThis.HTMLElementTagNameMap['model-viewer']>
+//         >,
+//         Partial<globalThis.HTMLElementTagNameMap['model-viewer']>,
+//         { ar: boolean }
+//       >;
+//     }
+//   }
+// }
+
+import { ModelViewerElement } from '@google/model-viewer';
+
+declare global {
   namespace JSX {
     interface IntrinsicElements {
-      'model-viewer': React.DetailedHTMLProps<
-        React.AllHTMLAttributes<
-          Partial<globalThis.HTMLElementTagNameMap['model-viewer']>
-        >,
-        Partial<globalThis.HTMLElementTagNameMap['model-viewer']>,
-        { ar: boolean }
-      >;
+      'model-viewer': Partial<ModelViewerElement>;
     }
   }
 }
