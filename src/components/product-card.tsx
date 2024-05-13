@@ -22,11 +22,6 @@ export function ProductCard({
           ar-modes='scene-viewer webxr quick-look'
         ></model-viewer>
       </div>
-      <a
-        href={`intent://${model_URL}?link=/&title=${title}#Intent;scheme=http;package=com.google.ar.core;action=android.intent.action.VIEW;S.browser_fallback_url=/;end;`}
-      >
-        click
-      </a>
 
       <div className='flex flex-col px-5 pb-5 pt-3 gap-2'>
         <h3 className='font-medium'>{title}</h3>
