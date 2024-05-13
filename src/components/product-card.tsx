@@ -1,36 +1,8 @@
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-nocheck
-import { ModelViewerElement } from '@google/model-viewer/lib/model-viewer';
-
 export function ProductCard({ title, description }: Product) {
   return (
     <div className='bg-white flex flex-col shadow-lg rounded-md border border-solid border-slate-200 overflow-hidden'>
       <div className='w-full bg-slate-100 flex items-center justify-center h-96'>
-        <ModelViewerElement
-          src='https://modelviewer.dev/shared-assets/models/NeilArmstrong.glb'
-          poster='https://modelviewer.dev/shared-assets/models/NeilArmstrong.webp'
-          alt='model-viewer'
-          ar
-          ar-modes='webxr scene-viewer quick-look'
-          ar-scale='auto'
-          environment-image='neutral'
-          exposure='.6'
-          reveal='manual'
-          camera-controls
-        />
-      </div>
-
-      <div className='flex flex-col px-5 pb-5 pt-3 gap-2'>
-        <h3 className='font-medium'>{title}</h3>
-        <p className='text-gray-500 text-sm leading-6'>{description}</p>
-      </div>
-    </div>
-  );
-}
-
-/*
-*
-* <model-viewer
+        <model-viewer
           alt=''
           ar={true}
           shadow-intensity='1'
@@ -38,8 +10,9 @@ export function ProductCard({ title, description }: Product) {
           camera-controls={true}
           ar-status='not-presenting'
           ar-modes='scene-viewer webxr quick-look'
-          src='https://modelviewer.dev/shared-assets/models/NeilArmstrong.glb'
           poster='https://modelviewer.dev/shared-assets/models/NeilArmstrong.webp'
+          ios-src='https://modelviewer.dev/shared-assets/models/glTF-Sample-Assets/Models/MaterialsVariantsShoe/glTF-Binary/MaterialsVariantsShoe.glb'
+          src='https://modelviewer.dev/shared-assets/models/glTF-Sample-Assets/Models/MaterialsVariantsShoe/glTF-Binary/MaterialsVariantsShoe.glb'
           environment-image='https://modelviewer.dev/shared-assets/environments/moon_1k.hdr'
         >
           <button
@@ -57,4 +30,12 @@ export function ProductCard({ title, description }: Product) {
             👋 Activate AR
           </button>
         </model-viewer>
-* */
+      </div>
+
+      <div className='flex flex-col px-5 pb-5 pt-3 gap-2'>
+        <h3 className='font-medium'>{title}</h3>
+        <p className='text-gray-500 text-sm leading-6'>{description}</p>
+      </div>
+    </div>
+  );
+}
