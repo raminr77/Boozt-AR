@@ -4,16 +4,27 @@ export function ProductCard({ title, description }: Product) {
       <div className='w-full bg-slate-100 flex items-center justify-center h-96'>
         <model-viewer
           alt=''
-          camera-controls=''
           shadow-intensity='1'
           touch-action='pan-y'
+          camera-controls={true}
           ar-status='not-presenting'
           src='https://modelviewer.dev/shared-assets/models/NeilArmstrong.glb'
           poster='https://modelviewer.dev/shared-assets/models/NeilArmstrong.webp'
           environment-image='https://modelviewer.dev/shared-assets/environments/moon_1k.hdr'
         >
-          <button slot='ar-button' className='absolute z-10 top-4 left-4 bg-red-500'>
-            View in your space
+          <button
+            slot='ar-button'
+            style={{
+              zIndex: 10,
+              top: '16px',
+              right: '16px',
+              border: 'none',
+              borderRadius: '4px',
+              position: 'absolute',
+              backgroundColor: 'white'
+            }}
+          >
+            👋 Activate AR
           </button>
         </model-viewer>
       </div>
