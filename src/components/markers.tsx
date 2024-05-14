@@ -11,7 +11,7 @@ export function Markers() {
     <section className='w-11/12 max-w-screen-sm overflow-hidden flex flex-col gap-4 items-center'>
       <div className='w-full h-96 bg-slate-300 rounded overflow-hidden'>
         {/* A Frame */}
-        <a-scene embedded={true} arjs='sourceType: webcam;'>
+        <a-scene embedded arjs='sourceType: webcam;'>
           <a-marker preset='hiro'>
             <a-box position='0 0.5 0' material='color: yellow; opacity: 0.8'></a-box>
           </a-marker>
