@@ -10,8 +10,8 @@ import { FaceTacking } from './components/face-tacking.tsx';
 const MENU = {
   HOME: 'Home',
   MARKERS: 'Markers',
-  PRODUCTS: 'Products',
-  FACE_TRACKING: 'Face Tracking'
+  TRACKING: 'Tracking',
+  PRODUCTS: 'Products'
 };
 
 function App() {
@@ -29,7 +29,7 @@ function App() {
         {activeTab === MENU.HOME && <Home />}
         {activeTab === MENU.MARKERS && <Markers />}
         {activeTab === MENU.PRODUCTS && <Products />}
-        {activeTab === MENU.FACE_TRACKING && <FaceTacking />}
+        {activeTab === MENU.TRACKING && <FaceTacking />}
       </PageLayout>
 
       <Footer />

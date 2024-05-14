@@ -1,3 +1,3 @@
 export function FaceTacking() {
-  return <div>Face Tracking</div>;
+  return <section>Face Tracking</section>;
 }
