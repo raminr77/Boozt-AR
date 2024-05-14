@@ -1,4 +1,3 @@
-/// <reference types="@google/model-viewer" />
 import React from 'react';
 
 export declare global {

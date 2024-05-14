@@ -5,11 +5,13 @@ import { Footer } from './components/footer.tsx';
 import { Markers } from './components/markers.tsx';
 import { Products } from './components/products.tsx';
 import { PageLayout } from './components/page-layout.tsx';
+import { FaceTacking } from './components/face-tacking.tsx';
 
 const MENU = {
   HOME: 'Home',
   MARKERS: 'Markers',
-  PRODUCTS: 'Products'
+  PRODUCTS: 'Products',
+  FACE_TRACKING: 'Face Tracking'
 };
 
 function App() {
@@ -27,6 +29,7 @@ function App() {
         {activeTab === MENU.HOME && <Home />}
         {activeTab === MENU.MARKERS && <Markers />}
         {activeTab === MENU.PRODUCTS && <Products />}
+        {activeTab === MENU.FACE_TRACKING && <FaceTacking />}
       </PageLayout>
 
       <Footer />

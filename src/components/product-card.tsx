@@ -8,6 +8,7 @@ export function ProductCard({
   return (
     <div className='bg-white flex flex-col shadow-lg rounded-md border border-solid border-slate-200 overflow-hidden'>
       <div className='w-full bg-slate-100 flex items-center justify-center h-64'>
+        {/* Model Viewer */}
         <model-viewer
           ar={true}
           alt={title}
@@ -21,6 +22,7 @@ export function ProductCard({
           ar-status='not-presenting'
           ar-modes='scene-viewer webxr quick-look'
         ></model-viewer>
+        {/* Model Viewer */}
       </div>
 
       <div className='flex flex-col px-5 pb-5 pt-3 gap-2'>
