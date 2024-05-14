@@ -7,7 +7,7 @@ export function ProductCard({
 }: Product) {
   return (
     <div className='bg-white flex flex-col shadow-lg rounded-md border border-solid border-slate-200 overflow-hidden'>
-      <div className='w-full bg-slate-100 flex items-center justify-center h-96'>
+      <div className='w-full bg-slate-100 flex items-center justify-center h-64'>
         <model-viewer
           ar={true}
           alt={title}
