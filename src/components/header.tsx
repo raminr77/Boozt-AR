@@ -5,7 +5,7 @@ interface Header {
 }
 export function Header({ items = [], activeTab, onTabChange }: Header) {
   const btnClasses =
-    'bg-slate-100 hover:bg-slate-200 px-4 py-1 rounded-md flex items-center justify-center border-2 border-slate-300 text-slate-500 hover:text-slate-900';
+    'bg-slate-100 hover:bg-slate-200 px-2 py-1 rounded-md flex items-center justify-center border-2 border-slate-300 text-slate-500 hover:text-slate-900';
   return (
     <header className='flex flex-col gap-1 items-center justify-center my-5 bg-slate-50 w-full z-10 py-5'>
       <h3 className='font-bold text-3xl text-gray-900'>Boozt AR</h3>
