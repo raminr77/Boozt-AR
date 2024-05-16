@@ -3,11 +3,14 @@ export function ProductCard({
   image,
   model_URL,
   description,
-  IOS_Model_URL
+  IOS_Model_URL,
+  isLarge = false
 }: Product) {
   return (
     <div className='bg-white flex flex-col shadow-lg rounded-md border border-solid border-slate-200 overflow-hidden'>
-      <div className='w-full bg-slate-100 flex items-center justify-center h-64 p-5'>
+      <div
+        className={`w-full bg-slate-100 flex items-center justify-center ${isLarge ? 'h-96' : 'h-64 p-5'}`}
+      >
         {/* Model Viewer */}
         <model-viewer
           ar={true}
