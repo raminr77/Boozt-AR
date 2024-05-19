@@ -44,11 +44,11 @@
     "Boozt"
   ],
   "bugs": {
-    "url": "https://github.com/raminr77/boozt-webxr/issues"
+    "url": "https://github.com/raminr77/Boozt-AR/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/raminr77/boozt-webxr.git"
+    "url": "git+https://github.com/raminr77/Boozt-AR.git"
   },
   "homepage": "https://boozt-ar.ir"
 }
